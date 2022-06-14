@@ -1,0 +1,31 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "hello_world"
+version = "0.1.05" # poetry can only use the version supplied in this file, and expects this to be the offical value.
+description = "Hello World Example"
+authors = ["John Smith <john.smith@example.com>"]
+license = "GPLv3"
+readme = "README.md"
+homepage = ""
+keywords = ["hello", "world"]
+classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: OS Independent",
+        "Natural Language :: English",
+        "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+hello_world = "hello_world.__main__:cli"
+
+[tool.poetry.urls]
+issues = ""
